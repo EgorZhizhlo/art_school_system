@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Об авторе — ArtSchoolSystem</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/site/css/navbar.css">
+    <link rel="stylesheet" href="/static/site/css/footer.css">
+</head>
+
+<body>
+
+<div th:replace="~{site/layout/navbar :: navbar}"></div>
+
+<div class="content-wrapper">
+
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h1 class="fw-bold mb-3">Об авторе</h1>
+                        <p class="text-muted">Проект: ArtSchoolSystem — информационно-справочная система художественной школы.</p>
+
+                        <div class="mt-4">
+                            <h4>ДЦПУП23-1</h4>
+                            <p class="mb-1"><strong>Гатина Эльвина Эмилевна</strong></p>
+                            <p>
+                                Разработчик и автор данного проекта. Интересы: веб-разработка, дизайн интерфейсов и творческое образование. 
+                                Здесь вы найдёте удобный интерфейс для получения информации о художественной школе, расписании занятий и материалах.
+                            </p>
+                        </div>
+
+                        <div class="mt-4">
+                            <h4>О проекте</h4>
+                            <p>
+                                ArtSchoolSystem — это современная информационно-справочная система для художественной школы. Проект создан для того, чтобы предоставить студентам, преподавателям и родителям возможность получать актуальную информацию о школе, расписании, курсах и мероприятиях в удобной и интуитивной форме. 
+                                Система поддерживает регистрацию пользователей, просмотр информации о школе, комментарии и управление контентом.
+                            </p>
+                            <p>
+                                Основные возможности включают: просмотр курсов, управление профилем, получение новостей и взаимодействие с сообществом школы.
+                            </p>
+                        </div>
+
+                        <div class="mt-4">
+                            <h4>Цели проекта</h4>
+                            <ul>
+                                <li>Создать дружелюбную среду для обучения и творческого развития.</li>
+                                <li>Обеспечить простоту использования для студентов и преподавателей.</li>
+                                <li>Поддерживать разнообразие направлений: от живописи и скульптуры до дизайна и фотографии.</li>
+                                <li>Поощрять креативность и самовыражение через искусство.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div>
+
+<div th:replace="~{site/layout/footer :: footer}"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
