@@ -49,7 +49,7 @@ public class DataInitializer implements CommandLineRunner {
             System.out.println("✅ Преподаватель создан: teacher@artschoolsystem.com / teacher");
         }
 
-        // Создание обычного пользователя
+        // Создание обычного пользователяf
         if (userRepository.findByEmail("user@artschoolsystem.com").isEmpty()) {
             User user = User.builder()
                     .fullName("Пользователь Петр Петров")
