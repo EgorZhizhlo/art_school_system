@@ -7,7 +7,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     volumes:
-      - db_data:/var/lib/postgresql/data
+      - art_school_pgdata:/var/lib/postgresql/data
     ports:
       - "5432:5432"
     healthcheck:
@@ -46,6 +46,6 @@ services:
       - ./src/main/resources/static:/var/www/html/static:ro
 
 volumes:
-  db_data:
+  art_school_pgdata:
     external: true
-    name: cinema_db_data
+    name: art_school_pgdata
